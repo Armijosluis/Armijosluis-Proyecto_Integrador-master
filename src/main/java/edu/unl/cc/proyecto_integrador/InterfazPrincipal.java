@@ -55,21 +55,22 @@ public class InterfazPrincipal {
 
         Paciente p = new Paciente(nombre, cedula, edad);
 
-        System.out.print("Peso: ");
-        double peso = sc.nextDouble();
+  System.out.print("Peso: ");
+double peso = Double.parseDouble(sc.nextLine());
 
-        System.out.print("Altura: ");
-        double altura = sc.nextDouble();
+System.out.print("Altura: ");
+double altura = Double.parseDouble(sc.nextLine());
 
-        System.out.print("Frecuencia Cardiaca: ");
-        int fc = sc.nextInt();
-        sc.nextLine();
+System.out.print("Frecuencia Cardiaca: ");
+int fc = Integer.parseInt(sc.nextLine());
 
-        System.out.print("Presion Arterial: ");
-        String pa = sc.nextLine(); // <-- CORREGIDO
+System.out.print("Presion Arterial: ");
+String pa = sc.nextLine();
 
-        System.out.print("Saturacion O2: ");
-        int sat = sc.nextInt();
+System.out.print("Saturacion O2: ");
+int sat = Integer.parseInt(sc.nextLine());
+
+
 
         SignosVitales s = new SignosVitales(peso, altura, fc, pa, sat);
 
